@@ -3,8 +3,10 @@
     margin: 0;
 }
 
-  .container {
-    padding: 20px;
+  .containers {
+    color: #fff;
+    margin: 10px 7%;
+    padding: 25px;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -76,6 +78,7 @@
   }
 
   .search-box {
+    display: flex;
     position: relative;
     flex: 1;
   }
