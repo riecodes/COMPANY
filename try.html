@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Data Table</title>
+<!-- Link to Font Awesome for the pencil icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<!-- Link to Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <!-- Search box -->
+  <div class="search-container">
+    <div class="search-box">
+      <input type="text" class="form-control" placeholder="Search Name/Number">
+      <i class="fas fa-search search-icon"></i>
+    </div>
+    <button class="btn btn-primary add-contact-button">+ Add Contact</button>
+    <select class="form-control department-dropdown">
+      <option value="Department">Choose Department</option>
+      <option value="Department">Department 1</option>
+      <option value="Department">Department 2</option>
+    </select>
+  </div>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th class="checkbox-column"></th>
+        <th>Last Name</th>
+        <th>First Name</th>
+        <th>Mobile Number</th>
+        <th>Creator</th>
+        <th>Privacy</th>
+        <th class="action-column">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="checkbox-column"><input type="checkbox"></td>
+        <td>Smith</td>
+        <td>John</td>
+        <td>123-456-7890</td>
+        <td>Admin</td>
+        <td>
+          <select class="form-control">
+            <option value="Department">Department</option>
+            <option value="Department">Department</option>
+            <option value="Department">Department</option>
+          </select>
+        </td>
+        <td class="center-text"><a href="#" class="edit-button"><i class="fas fa-pencil-alt"></i>Edit</a></td>
+      </tr>
+      <tr>
+        <td class="checkbox-column"><input type="checkbox"></td>
+        <td>Doe</td>
+        <td>Jane</td>
+        <td>987-654-3210</td>
+        <td>User</td>
+        <td>
+          <select class="form-control">
+            <option value="Department">Department</option>
+            <option value="Department">Department</option>
+            <option value="Department">Department</option>
+          </select>
+        </td>
+        <td class="center-text"><a href="#" class="edit-button"><i class="fas fa-pencil-alt"></i>Edit</a></td>
+      </tr>
+      <!-- Add more rows as needed -->
+    </tbody>
+  </table>
+</div>
+<!-- Link to Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

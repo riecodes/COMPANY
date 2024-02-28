@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zebpay Header</title>
     <link rel="stylesheet" href="style.css">
+
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -17,7 +19,7 @@
             <span class="admin">Admin</span>
             <i class="fas fa-angle-down admin"></i>
         </div>
-        <button class="btn btn-dashboard">Dashboard</button>
+        <button class="btn-dashboard">Dashboard</button>
     </header>
     
     <div class="below-header">
@@ -73,7 +75,67 @@
             </div>                  
         </div>
     </div>
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <div class="container">
+        <div class="search-container">
+            <div class="search-box">
+            <input type="text" class="form-control" placeholder="Search Name/Number">
+            <i class="fas fa-search search-icon"></i>
+            </div>
+            <button class="add-contact-button">+ Add Contact</button>
+            <select class="form-control department-dropdown">
+            <option value="Department">Choose Department</option>
+            <option value="Department">Department 1</option>
+            <option value="Department">Department 2</option>
+            </select>
+        </div>
+
+        <table class="table">
+            <thead>
+            <tr class="table-header">
+                <th class="checkbox-column"></th>
+                <th>Last Name</th>
+                <th>First Name</th>
+                <th>Mobile Number</th>
+                <th>Creator</th>
+                <th>Privacy</th>
+                <th class="action-column">Action</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="checkbox-column"><input type="checkbox"></td>
+                <td>Smith</td>
+                <td>John</td>
+                <td>123-456-7890</td>
+                <td>Admin</td>
+                <td>
+                <select class="form-control">
+                    <option value="Department">Department</option>
+                    <option value="Department">Department</option>
+                    <option value="Department">Department</option>
+                </select>
+                </td>
+                <td class="center-text"><a href="#" class="edit-button"><i class="fas fa-pencil-alt"></i>Edit</a></td>
+            </tr>
+            <tr>
+                <td class="checkbox-column"><input type="checkbox"></td>
+                <td>Doe</td>
+                <td>Jane</td>
+                <td>987-654-3210</td>
+                <td>User</td>
+                <td>
+                <select class="form-control">
+                    <option value="Department">Department</option>
+                    <option value="Department">Department</option>
+                    <option value="Department">Department</option>
+                </select>
+                </td>
+                <td class="center-text"><a href="#" class="edit-button"><i class="fas fa-pencil-alt"></i>Edit</a></td>
+            </tr>
+            <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
